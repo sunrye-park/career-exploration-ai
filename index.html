@@ -2832,6 +2832,14 @@
         // 객체로 감싸서 온 경우 배열 추출
         if (!Array.isArray(careers) && careers.careers) careers = careers.careers;
         if (!Array.isArray(careers)) careers = [careers];
+        // 배치 내 중복 제거 (AI가 같은 jobTitle을 여러 번 생성할 수 있음)
+        const seenTitles = new Set();
+        careers = careers.filter(c => {
+          const key = c.jobTitle?.trim();
+          if (!key || seenTitles.has(key)) return false;
+          seenTitles.add(key);
+          return true;
+        });
         const generatedCareers = careers.map(c => markCareerOrigin(c, {
           originType: 'generated',
           sourceLabel: 'AI 생성 아이디어',

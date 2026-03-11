@@ -30,11 +30,11 @@ export default async function handler(req, res) {
     },
     body: JSON.stringify({
       model: OPENAI_MODEL,
-      temperature: 0.3,
+      temperature: 0.9,
       messages: [
         {
           role: 'system',
-          content: '너는 진로 탐색 앱의 JSON 생성 엔진이다. 반드시 스키마에 맞는 JSON만 반환한다.'
+          content: '너는 진로 탐색 앱의 JSON 생성 엔진이다. 반드시 스키마에 맞는 JSON만 반환한다. 여러 항목을 생성할 때 각 항목의 이름과 내용은 반드시 서로 달라야 한다. 절대 같은 항목을 반복하지 마라.'
         },
         {
           role: 'user',
