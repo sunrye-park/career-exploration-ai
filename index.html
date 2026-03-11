@@ -47,6 +47,12 @@
       font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
     body {
       font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
       background:
@@ -57,11 +63,13 @@
       align-items: flex-start;
       justify-content: center;
       padding: 20px 16px 40px;
+      overflow-x: hidden;
     }
 
     #app {
-      width: 100%;
+      width: min(100%, 480px);
       max-width: 480px;
+      overflow-x: clip;
     }
 
     .screen { display: none; }
@@ -73,6 +81,12 @@
       border-radius: 16px;
       padding: 28px 24px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      overflow-x: hidden;
+    }
+
+    img, svg, canvas {
+      display: block;
+      max-width: 100%;
     }
 
     /* ── 섹션 라벨 ── */
@@ -768,6 +782,8 @@
       margin-top: 2px;
       line-height: 1.5;
       text-align: center;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
     }
 
     .brand-footer {
@@ -1302,6 +1318,8 @@
 
     /* ── 반응형 ── */
     @media (max-width: 360px) {
+      body { padding-inline: 12px; }
+      .card { padding: 24px 18px; }
       .category-grid { grid-template-columns: repeat(2, 1fr); }
       .question { font-size: 19px; }
     }
