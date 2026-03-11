@@ -1,0 +1,59 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1050" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B67AF"/>
+      <stop offset="1" stop-color="#0A4A80"/>
+    </linearGradient>
+    <linearGradient id="card" x1="218" y1="132" x2="934" y2="524" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F3EA"/>
+      <stop offset="1" stop-color="#F2EBE1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#E36A3C"/>
+      <stop offset="1" stop-color="#F3A35A"/>
+    </linearGradient>
+    <filter id="shadow" x="172" y="94" width="856" height="460" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0156863 0 0 0 0 0.121569 0 0 0 0 0.223529 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1032" cy="132" r="108" fill="#FFFFFF" fill-opacity="0.08"/>
+  <circle cx="167" cy="89" r="96" fill="#FFFFFF" fill-opacity="0.06"/>
+  <circle cx="990" cy="534" r="136" fill="#FFFFFF" fill-opacity="0.05"/>
+
+  <g filter="url(#shadow)">
+    <rect x="208" y="112" width="784" height="388" rx="30" fill="url(#card)"/>
+  </g>
+
+  <rect x="252" y="154" width="124" height="40" rx="20" fill="#E6F2FF"/>
+  <text x="314" y="180" text-anchor="middle" fill="#0E66B2" font-size="22" font-weight="700" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">AI × 진로</text>
+
+  <text x="252" y="282" fill="#111111" font-size="88" font-weight="800" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">AI x 진로</text>
+  <text x="252" y="352" fill="#4B5563" font-size="34" font-weight="600" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">미래 직업 탐색과 성장 로드맵</text>
+  <text x="252" y="405" fill="#6B7280" font-size="24" font-weight="500" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">AI와 함께 나의 고유함을 확장하는 진로 탐색 웹앱</text>
+
+  <rect x="252" y="446" width="184" height="18" rx="9" fill="#DCEEFF"/>
+  <rect x="448" y="446" width="128" height="18" rx="9" fill="#DDF6EC"/>
+  <rect x="588" y="446" width="150" height="18" rx="9" fill="#FFE6D7"/>
+
+  <circle cx="865" cy="244" r="52" fill="#FFFFFF"/>
+  <circle cx="865" cy="244" r="22" fill="#D9EEFF"/>
+  <path d="M813 343C813 314.281 836.281 291 865 291C893.719 291 917 314.281 917 343V365H813V343Z" fill="#E6F2FF"/>
+
+  <circle cx="703" cy="244" r="52" fill="#FFFFFF"/>
+  <circle cx="703" cy="244" r="22" fill="#FFE6D7"/>
+  <path d="M651 343C651 314.281 674.281 291 703 291C731.719 291 755 314.281 755 343V365H651V343Z" fill="#FFF1E9"/>
+
+  <rect x="740" y="237" width="88" height="12" rx="6" fill="#CFE6FA"/>
+  <circle cx="784" cy="243" r="12" fill="url(#accent)"/>
+
+  <text x="252" y="548" fill="#E7EEF7" font-size="20" font-weight="600" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif">Career Exploration AI</text>
+</svg>

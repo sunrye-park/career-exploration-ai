@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI 융합 진로 탐색</title>
+  <meta name="description" content="AI와 함께 미래 직업을 탐색하고, 실제 학습경로까지 정리하는 진로 탐색 웹앱">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI x 진로">
+  <meta property="og:description" content="AI와 함께 미래 직업을 탐색하고, 실제 학습경로까지 정리하는 진로 탐색 웹앱">
+  <meta property="og:image" content="/og-thumbnail.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI x 진로">
+  <meta name="twitter:description" content="AI와 함께 미래 직업을 탐색하고, 실제 학습경로까지 정리하는 진로 탐색 웹앱">
+  <meta name="twitter:image" content="/og-thumbnail.svg">
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -2748,11 +2760,6 @@
 
   function renderSummary() {
     const summary = buildSummaryData();
-    const officialSources = mapOfficialSources([
-      ...(state.roadmap?.sources || []),
-      state.selectedCareer?.sourceNote || '',
-      'WEF Future of Jobs 2025'
-    ]);
     document.getElementById('r-job').textContent = state.job;
     document.getElementById('r-headline').textContent = summary.headline;
     document.getElementById('r-summary').textContent = summary.summary;
